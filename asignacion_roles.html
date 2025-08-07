@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Asignación de Roles en Microsoft Entra ID</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 40px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background-color: #fff;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #ecf0f1;
+    }
+    code {
+      background-color: #eef;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🛡️ Asignación de Roles en Microsoft Entra ID: Caso “Analista Seguridad”</h1>
+
+  <h2>🎯 Objetivo</h2>
+  <p>
+    Asignar un rol administrativo de solo lectura a un usuario llamado <strong>Analista Seguridad</strong>, con el fin de permitirle visualizar información de seguridad y reportes sin comprometer la integridad del sistema.
+  </p>
+
+  <h2>🪜 Pasos realizados</h2>
+  <ol>
+    <li><strong>Acceso al portal:</strong> Ingresé a <a href="https://entra.microsoft.com" target="_blank">entra.microsoft.com</a> y navegué a <em>Identidad &gt; Roles y administradores</em>.</li>
+    <li><strong>Selección del rol:</strong> Elegí el rol <code>Lector de seguridad</code>, cuya descripción indica:<br>
+      <em>“Puede leer la información de seguridad y los informes en Microsoft Entra ID y Microsoft 365.”</em>
+    </li>
+    <li><strong>Asignación al usuario:</strong>
+      <ul>
+        <li>Fui a <em>Identidad &gt; Usuarios</em></li>
+        <li>Seleccioné el usuario <strong>Analista Seguridad</strong></li>
+        <li>En la sección <em>Roles asignados</em>, hice clic en <strong>Agregar asignaciones</strong></li>
+        <li>Busqué y seleccioné el rol <code>Lector de seguridad</code></li>
+        <li>Confirmé con <strong>Revisar y asignar</strong></li>
+      </ul>
+    </li>
+  </ol>
+
+  <h2>📋 Resultado</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Usuario</th>
+        <th>Rol asignado</th>
+        <th>Permisos principales</th>
+        <th>Tipo de recurso</th>
+        <th>Ruta de acceso</th>
+        <th>Tipo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Analista Seguridad</td>
+        <td>Lector de seguridad</td>
+        <td>Leer información de seguridad y reportes en Entra ID y Microsoft 365</td>
+        <td>Organization</td>
+        <td>Directo</td>
+        <td>Integrado</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>🔍 Verificación</h2>
+  <p>
+    Desde el perfil del usuario, confirmé que el rol aparece en la sección <em>Roles asignados</em>, con acceso directo e integrado a nivel organizacional.
+  </p>
+
+  <h2>💡 Reflexión</h2>
+  <p>
+    Este ejercicio me permitió comprender cómo se gestionan los permisos granulares en entornos empresariales. Asignar roles adecuados es clave para mantener la seguridad y la trazabilidad, especialmente en proyectos como <strong>EmpleoJusto-AI</strong>, donde la transparencia y el control de acceso son fundamentales.
+  </p>
+
+</body>
+</html>
